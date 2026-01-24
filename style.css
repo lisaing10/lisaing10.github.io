@@ -1,0 +1,124 @@
+/* =========================
+   Design Variables
+========================= */
+:root {
+  --font-title: 'Otomanopee One', cursive;
+  --font-body: 'Nunito Sans', system-ui, -apple-system, sans-serif;
+
+  --bg: #111;
+  --card-bg: #ffffff;
+  --text: #000000;
+}
+
+/* =========================
+   Global Styles
+========================= */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* =========================
+   Layout
+========================= */
+.landing {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background: var(--card-bg);
+  padding: 3rem 4rem;
+  border-radius: 12px;
+}
+
+/* =========================
+   Intro Section
+========================= */
+.intro {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.intro h1 {
+  font-family: var(--font-title);
+  font-size: 3rem;
+  margin: 0 0 0.5rem 0;
+  letter-spacing: 0.02em;
+}
+
+.intro p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  opacity: 0.85;
+  margin: 0;
+}
+
+/* =========================
+   Content Section
+========================= */
+.content {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.duck {
+  width: 280px;
+  height: auto;
+}
+
+/* =========================
+   Links
+========================= */
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.link img {
+  width: 24px;
+  height: 24px;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   Responsive
+========================= */
+@media (max-width: 768px) {
+  .card {
+    padding: 2rem;
+  }
+
+  .content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .links {
+    align-items: center;
+  }
+}
