@@ -1,68 +1,162 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lisa Ing</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lisa Ing</title>
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Otomanopee+One&family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
-    rel="stylesheet"
-  />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Pangolin&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-
-  <main class="page">
-    <header class="intro">
-      <h1>Howdy! I'm Lisa Ing.</h1>
-      <p>Cartoonist. Stanford Student. Duck Doodling Enthusiast.</p>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a href="./" class="site-name">
+        <img src="assets/signature-logo.png" alt="Lisa Ing, home" />
+      </a>
+      <nav class="site-nav">
+        <a href="comics/">Comics</a>
+        <a href="about/">About</a>
+        <a href="contact/">Contact</a>
+      </nav>
     </header>
 
-    <section class="content">
-      <img
-        src="assets/duck.png"
-        alt="Duck illustration"
-        class="duck"
-      />
+    <main>
+      <section class="hero">
+        <img src="assets/duck.png" alt="Duck illustration" class="duck" />
+        <div class="intro">
+          <h1>Howdy! I'm Lisa Ing.</h1>
+          <p>Comics about big feelings, told by a very small duck.</p>
+        </div>
+      </section>
 
-      <nav class="links">
-        <a
-          href="https://tinyview.com/student-bill"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="link"
+      <section class="spotlight">
+        <!-- Flagship: Student Bill -->
+        <section class="feature feature-flagship" aria-labelledby="sb-title">
+          <img
+            src="assets/student-bill-banner.png"
+            alt="Student Bill: Ducks go to college. A duck in a red cap and backpack runs across a hill toward the Stanford campus."
+            class="feature-img"
+          />
+          <div class="feature-body">
+            <p class="eyebrow">
+              Complete Series | 43 comics | Sept 2025 - Sept 2026
+            </p>
+            <h2 id="sb-title">Student Bill</h2>
+            <p class="feature-meta">Ducks go to college.</p>
+            <a
+              href="https://tinyview.com/student-bill"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn"
+              >Read Student Bill</a
+            >
+          </div>
+        </section>
+
+        <!-- Featured: As Duck Would Have It -->
+        <section
+          class="feature feature-secondary"
+          aria-labelledby="aduck-title"
         >
-          <img src="assets/icon-comic.png" alt="" />
-          <span>Webcomic</span>
-        </a>
+          <img
+            src="assets/as-duck-would-have-it-banner.png"
+            alt="As Duck Would Have It: four ducklings in red caps tumble down a wave. How I learned to swim in the Stanford Pond."
+            class="feature-img"
+          />
+          <div class="feature-body">
+            <p class="eyebrow">Featured</p>
+            <h2 id="aduck-title">As Duck Would Have It</h2>
+            <p class="feature-meta">
+              How I learned to swim in the Stanford Pond.
+            </p>
+            <a
+              href="https://stanfordmag.org/contents/as-duck-would-have-it"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn"
+              >Read As Duck Would Have It</a
+            >
+          </div>
+        </section>
 
-        <a
-          href="https://www.instagram.com/lisart_tart/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="link"
-        >
-          <img src="assets/icon-instagram.png" alt="" />
-          <span>@lisart_tart</span>
-        </a>
+        <!-- Recognition strip -->
+        <section class="recognition" aria-labelledby="rec-title">
+          <h2 id="rec-title" class="section-title">Recognition</h2>
+          <ul class="rec-list">
+            <li>
+              <a
+                href="https://schulzmuseum.org/lisa-ing/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="rec-item"
+              >
+                <span class="rec-title">Charles M. Schulz Museum</span>
+                <span class="rec-sub">Second Saturday Cartoonist</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.cartoonart.org/fog-city-comics-zine"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="rec-item"
+              >
+                <span class="rec-title">San Francisco Cartoon Art Museum</span>
+                <span class="rec-sub">Fog City Comics Zine Feature</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://stanfordmag.org/contents/as-duck-would-have-it"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="rec-item"
+              >
+                <span class="rec-title">Stanford Magazine</span>
+                <span class="rec-sub">Student Feature</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://caseawards.secure-platform.com/a/gallery/rounds/501/details/276316"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="rec-item"
+              >
+                <span class="rec-title">Best of CASE District VII</span>
+                <span class="rec-sub">Storytelling</span>
+              </a>
+            </li>
+          </ul>
+        </section>
 
-        <a
-          href="mailto:lisakiming@gmail.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="link"
-        >
-          <img src="assets/icon-mail.png" alt="" />
-          <span>lisakiming@gmail.com</span>
-        </a>
-      </nav>
-    </section>
-  </main>
-
+        <!-- Follow & contact -->
+        <section class="follow" aria-labelledby="follow-title">
+          <h2 id="follow-title" class="section-title">Follow &amp; Contact</h2>
+          <div class="btn-row">
+            <a
+              href="https://www.instagram.com/lisart_tart/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-icon"
+            >
+              <img src="assets/icon-instagram.png" alt="" />
+              <span>@lisart_tart</span>
+            </a>
+            <a href="mailto:artbylisaing@gmail.com" class="btn btn-icon">
+              <img src="assets/icon-mail.png" alt="" />
+              <span>artbylisaing@gmail.com</span>
+            </a>
+          </div>
+        </section>
+      </section>
+    </main>
 </body>
 </html>

@@ -8,43 +8,44 @@ html, body {
 }
 
 :root {
-  --font-title: 'Otomanopee One', cursive;
-  --font-body: 'Nunito Sans', system-ui, -apple-system, sans-serif;
+  --font-title: 'Darumadrop One', cursive;
+  --font-body: 'Pangolin', 'Comic Sans MS', 'Chalkboard SE', cursive, sans-serif;
 }
 
 /* =========================
    Base Styles
 ========================= */
 body {
+  font-weight: 400;
   font-family: var(--font-body);
   background: #ffffff;
   color: #000000;
 }
 
 /* =========================
-   Page Layout
+   Home: Hero
 ========================= */
-.page {
-  min-height: 100vh;
-  padding: 2rem;
+.hero {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
   box-sizing: border-box;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  gap: 4rem;
 }
 
-/* =========================
-   Intro
-========================= */
-.intro {
-  text-align: center;
-  margin-bottom: 4rem;
+.duck {
+  width: 260px;
+  height: auto;
+  flex-shrink: 0;
 }
 
 .intro h1 {
+  font-weight: 400;
   font-family: var(--font-title);
-  font-size: 4.5rem;
+  font-size: 4rem;
   margin: 0 0 1rem 0;
   line-height: 1.1;
 }
@@ -56,22 +57,193 @@ body {
 }
 
 /* =========================
-   Main Content
+   Home: Spotlight
 ========================= */
-.content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5rem;
+.spotlight {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 2rem 4rem;
+  box-sizing: border-box;
 }
 
-.duck {
-  width: 280px;
-  height: auto;
+.spotlight {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.section-title {
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: 2rem;
+  margin: 0 0 1.5rem 0;
+  text-align: center;
 }
 
 /* =========================
-   Links
+   Buttons (comic narration box)
+========================= */
+:root {
+  --narration: #F6C443;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1.5rem;
+  background: var(--narration);
+  color: #000000;
+  border: 3px solid #000000;
+  border-radius: 0;
+  box-shadow: 5px 5px 0 #000000;
+  font-family: var(--font-body);
+  font-size: 1.15rem;
+  line-height: 1.2;
+  text-decoration: none;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.btn:hover,
+.btn:focus-visible {
+  transform: translate(-2px, -2px);
+  box-shadow: 7px 7px 0 #000000;
+}
+
+.btn:active {
+  transform: translate(5px, 5px);
+  box-shadow: 0 0 0 #000000;
+}
+
+.btn:focus-visible {
+  outline: 3px solid #000000;
+  outline-offset: 4px;
+}
+
+.btn-icon img {
+  width: 28px;
+  height: 28px;
+}
+
+.btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem 2rem;
+}
+
+/* =========================
+   Feature cards
+========================= */
+.feature {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid #000000;
+  background: #ffffff;
+}
+
+.feature-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-bottom: 3px solid #000000;
+}
+
+.feature-body {
+  padding: 1.5rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.feature-body h2 {
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.eyebrow {
+  margin: 0;
+  font-size: 1rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+.feature-meta {
+  margin: 0 0 1rem 0;
+  font-size: 1.3rem;
+}
+
+/* Secondary card: image beside text on wide screens */
+.feature-secondary {
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.feature-secondary .feature-img {
+  width: 55%;
+  object-fit: contain;
+  border-bottom: 0;
+  border-right: 3px solid #000000;
+}
+
+.feature-secondary .feature-body {
+  justify-content: center;
+  flex: 1;
+}
+
+/* =========================
+   Recognition strip
+========================= */
+.rec-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.rec-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+  border: 3px solid #000000;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.rec-item:hover,
+.rec-item:focus-visible {
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0 #000000;
+}
+
+.rec-title {
+  font-family: var(--font-title);
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
+
+.rec-sub {
+  font-size: 1rem;
+  line-height: 1.3;
+  opacity: 0.8;
+}
+
+/* =========================
+   Links (Contact page)
 ========================= */
 .links {
   display: flex;
@@ -103,32 +275,186 @@ body {
 }
 
 /* =========================
+   Site Header (inner pages)
+========================= */
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1.25rem 2rem;
+  border-bottom: 2px solid #000000;
+}
+
+.site-name {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.site-name img {
+  display: block;
+  height: 44px;
+  width: auto;
+}
+
+.site-nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.site-nav a {
+  font-size: 1.1rem;
+  font-weight: 400;
+  text-decoration: none;
+  color: #000000;
+}
+
+.site-nav a:hover,
+.site-nav a[aria-current="page"] {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* =========================
+   Inner Pages
+========================= */
+.subpage {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  box-sizing: border-box;
+}
+
+.subpage h1 {
+  font-weight: 400;
+  font-family: var(--font-title);
+  font-size: 3rem;
+  margin: 0 0 1rem 0;
+  line-height: 1.1;
+}
+
+.subpage .lede {
+  font-size: 1.2rem;
+  opacity: 0.85;
+  margin: 0 0 2.5rem 0;
+}
+
+.breadcrumb {
+  margin: 0 0 1rem 0;
+}
+
+.breadcrumb a {
+  color: #000000;
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.breadcrumb a:hover {
+  opacity: 1;
+}
+
+/* Comic cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  display: block;
+  padding: 1.5rem;
+  border: 2px solid #000000;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #000000;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 6px 6px 0 #000000;
+}
+
+.card h2 {
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.card p {
+  margin: 0;
+  opacity: 0.8;
+}
+
+/* =========================
    Responsive
 ========================= */
+@media (max-width: 600px) {
+  .site-header {
+    padding: 1rem;
+  }
+
+  .site-nav {
+    gap: 1.25rem;
+  }
+
+  .subpage {
+    padding: 2rem 1rem;
+  }
+
+  .subpage h1 {
+    font-size: 2.25rem;
+  }
+}
+
 @media (max-width: 900px) {
-  .page {
-    padding: 2.5rem 2rem;
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    padding: 3rem 1rem;
   }
 
   .intro h1 {
-    font-size: 3rem;
+    font-size: 2.75rem;
   }
 
   .intro p {
     font-size: 1.15rem;
   }
 
-  .content {
-    flex-direction: column;
-    text-align: center;
+  .duck {
+    width: 200px;
+  }
+
+  .spotlight {
+    padding: 0 1rem 3rem;
     gap: 3rem;
   }
 
-  .links {
-    align-items: center;
+  .feature-secondary {
+    flex-direction: column;
   }
 
-  .duck {
-    width: 240px;
+  .feature-secondary .feature-img {
+    width: 100%;
+    border-right: 0;
+    border-bottom: 3px solid #000000;
+  }
+
+  .feature-body {
+    padding: 1.25rem 1.25rem 1.75rem;
+  }
+
+  .feature-body h2 {
+    font-size: 2rem;
+  }
+
+  .rec-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 1rem;
   }
 }
