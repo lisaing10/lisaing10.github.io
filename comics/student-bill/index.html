@@ -1,38 +1,143 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Student Bill | Lisa Ing</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Bill | Lisa Ing</title>
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Pangolin&display=swap"
-    rel="stylesheet"
-  />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Pangolin&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="../../style.css" />
-</head>
-<body>
+    <link rel="stylesheet" href="../../style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a href="../../" class="site-name">
+        <img src="../../assets/signature-logo.png" alt="Lisa Ing, home" />
+      </a>
+      <nav class="site-nav">
+        <a href="../../comics/" aria-current="page">Comics</a>
+        <a href="../../about/">About</a>
+        <a href="../../contact/">Contact</a>
+      </nav>
+    </header>
 
-  <header class="site-header">
-    <a href="../../" class="site-name">
-      <img src="../../assets/signature-logo.png" alt="Lisa Ing, home" />
-    </a>
-    <nav class="site-nav">
-      <a href="../../comics/" aria-current="page">Comics</a>
-      <a href="../../about/">About</a>
-      <a href="../../contact/">Contact</a>
-    </nav>
-  </header>
+    <main class="subpage sb-page">
+      <p class="breadcrumb"><a href="../">&larr; Comics</a></p>
 
-  <main class="subpage">
-    <p class="breadcrumb"><a href="../">&larr; Comics</a></p>
-    <h1>Student Bill</h1>
-    <p class="lede">Content coming soon.</p>
-  </main>
+      <!-- Hero -->
+      <section class="sb-hero">
+        <img
+          src="../../assets/student-bill-banner.png"
+          alt="Student Bill: Ducks go to college. A duck in a red cap and backpack runs across a hill toward the Stanford campus."
+          class="sb-banner"
+        />
+        <a
+          href="https://tinyview.com/student-bill/2025/09/29/move-in-day"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn"
+          >Read from the beginning</a
+        >
+      </section>
 
-</body>
+      <!-- Premise -->
+      <section class="sb-section" aria-labelledby="premise-title">
+        <h2 id="premise-title">Welcome to Sourdough University!</h2>
+        <p>
+          Follow Poppy Seed’s weekly adventures as she tackles imposter
+          syndrome, dodges deadlines, and leans on her new friends to survive
+          the chaos of freshman year. A comic series by Lisa Ing.
+        </p>
+        <div class="sb-previews">
+          <img
+            src="studentbill%20preview%201.png"
+            alt="Student Bill comic panel preview"
+          />
+        </div>
+      </section>
+
+      <!-- Origin story -->
+      <section class="sb-section" aria-labelledby="origin-title">
+        <h2 id="origin-title">Poppy’s Origin Story</h2>
+        <p>
+          Poppy is rooted in my experience balancing a sustainable creative
+          practice while witnessing the rapid development of technology as a
+          student at Stanford University. She first appeared in my student
+          spotlight comic in the Stanford Alumni Magazine,
+          <a
+            href="https://stanfordmag.org/contents/as-duck-would-have-it"
+            target="_blank"
+            rel="noopener noreferrer"
+            >“As Duck Would Have It”</a
+          >, loosely following my first two years at Stanford: learning to swim
+          in the college pond, setting my own goal posts, and finding a creative
+          community in the Stanford Storyboard Club. Student Bill carries that
+          spirit into a new form, as a wholesome, comedic slice-of-life
+          four-panel comic, published on Tinyview Comics.
+        </p>
+
+        <div class="sb-previews">
+          <img
+            src="studentbill_030_panel3.jpg"
+            alt="Student Bill comic, episode 30, panel 3"
+          />
+          <img
+            src="studentbill_030_panel4.jpg"
+            alt="Student Bill comic, episode 30, panel 4"
+          />
+        </div>
+      </section>
+
+      <!-- Author's note -->
+      <section class="sb-section" aria-labelledby="note-title">
+        <h2 id="note-title">Author’s note</h2>
+        <p>
+          As the first in my family to graduate from college, I came to Stanford
+          carrying a lot. Between post-grad plans, final classes, and soaking up
+          every last moment with friends, Student Bill has been my one constant
+          creative anchor through it all. This comic project has taught me what
+          it means to show up for my art, week after week. I’ve grown in ways I
+          never could have imagined walking onto campus freshman year!
+        </p>
+        <img
+          src="grad_duck.jpg"
+          alt="Illustration of a duck in graduation attire"
+          class="sb-note-img"
+        />
+      </section>
+
+      <!-- Process section: coming later -->
+
+      <!-- Follow -->
+      <section class="sb-section" aria-labelledby="follow-title">
+        <h2 id="follow-title" class="sb-center">Follow Student Bill</h2>
+        <div class="btn-row">
+          <a
+            href="https://tinyview.com/student-bill"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-icon"
+          >
+            <img src="../../assets/icon-comic.png" alt="" />
+            <span>Tinyview series page</span>
+          </a>
+          <a
+            href="https://www.instagram.com/studentbillcomics/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-icon"
+          >
+            <img src="../../assets/icon-instagram.png" alt="" />
+            <span>@studentbillcomics</span>
+          </a>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
