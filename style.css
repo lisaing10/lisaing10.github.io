@@ -526,3 +526,111 @@ body {
     gap: 2rem 1rem;
   }
 }
+
+/* =========================
+   As Duck Would Have It page
+========================= */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.banner-wrap {
+  position: relative;
+  width: 100%;
+}
+
+.banner-wrap .sb-banner {
+  display: block;
+}
+
+.banner-tag {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  right: 1rem;
+  margin: 0;
+  width: fit-content;
+  max-width: calc(100% - 2rem);
+  padding: 0.4rem 0.8rem;
+  background: var(--narration);
+  border: 3px solid #000000;
+  font-size: 1rem;
+  line-height: 1.3;
+}
+
+.sb-title {
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: 2.25rem;
+  line-height: 1.1;
+  margin: 0 0 1rem 0;
+}
+
+.sb-section h3 {
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin: 2rem 0 1rem;
+}
+
+.comic-pages {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.comic-pages img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Comics landing: project cards */
+.cards:has(.card-project) {
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.card-project {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  overflow: hidden;
+}
+
+.card-project img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #000000;
+}
+
+.card-project .card-body {
+  padding: 1.25rem 1.5rem 1.5rem;
+}
+
+/* About page: spacing around the grad duck image */
+.subpage > h1 + .sb-note-img {
+  margin: 2.5rem auto 3rem;
+}
+
+/* =========================
+   Site Footer
+========================= */
+.site-footer {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 3rem 2rem 4rem;
+  box-sizing: border-box;
+  border-top: 2px solid #000000;
+}
+
+@media (max-width: 900px) {
+  .site-footer {
+    padding: 2.5rem 1rem 3rem;
+  }
+}
